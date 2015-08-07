@@ -29,6 +29,9 @@ while (1/$a + 1/$b + 1/$c + 1/$d + 1/$e + 1/$f + 1/$g + 1/$h >= 1) {
               while (1/$a + 1/$b + 1/$c + 1/$d + 1/$e + 1/$f + 1/$g + 1/$h >= 1) {
                 echo "($a,$b,$c,$d,$e,$f,$g,$h)\n";
                 $count++;
+                if (1/$a + 1/$b + 1/$c + 1/$d + 1/$e + 1/$f + 1/$g + 1/$h == 1) {
+                  $winner = "($a,$b,$c,$d,$e,$f,$g,$h)\n";
+                }
                 $h = $h + 2;
               }
               $g = $g + 2;
@@ -78,6 +81,7 @@ while (1/$a + 1/$b + 1/$c + 1/$d + 1/$e + 1/$f + 1/$g + 1/$h >= 1) {
   $h = $g + 2;
 }
 echo "Found $count sets under the inequality.\n";
+if (isset($winner)) echo $winner;
 /*
 (3,5,7,9,11,13,23,25)
 (3,5,7,9,11,13,23,27)
@@ -1257,5 +1261,9 @@ echo "Found $count sets under the inequality.\n";
 (3,5,7,11,13,15,21,23)
 (3,5,7,11,13,17,19,21)
 Found 1177 sets under the inequality.
+
+No $winner printed, ergo none of these is equal to one. Furthermore, none of the
+infinite ones can be equal to one either because they are already greater than 1
+from their first 7 terms.
 */
 ?>
