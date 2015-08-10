@@ -68,6 +68,11 @@ A Leech-9 has been discovered: 3,5,7,9,11,15,35,45,231
 Checked roughly 1017573765 odd number triples in 433 seconds.
 
 (100,1000,10000000)
-
+A Leech-9 has been discovered: 3,5,7,9,11,15,21,135,10395
+A Leech-9 has been discovered: 3,5,7,9,11,15,21,165,693
+A Leech-9 has been discovered: 3,5,7,9,11,15,21,231,315
+A Leech-9 has been discovered: 3,5,7,9,11,15,33,45,385
+A Leech-9 has been discovered: 3,5,7,9,11,15,35,45,231
+Checked roughly 101778536265 odd number triples in 266702 seconds.
 */
 ?>
